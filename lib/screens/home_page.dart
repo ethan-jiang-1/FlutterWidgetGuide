@@ -1,5 +1,5 @@
-import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:firebase_remote_config/firebase_remote_config.dart';
+//import 'package:firebase_messaging/firebase_messaging.dart';
+//import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/svg.dart';
@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   String appLink =
       "https://play.google.com/store/apps/details?id=com.annsh.flutterwidgetguide";
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-  FirebaseMessaging _fcm;
+  //FirebaseMessaging _fcm;
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     WidgetsBinding.instance.addObserver(this);
     //Initialize Firebase Admob
     Ads.initialize();
-    _fcm = FirebaseMessaging();
+    //_fcm = FirebaseMessaging();
     Utils.getVersion().then((value) {
       versionNumber = value;
     });
@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     );
 
     /// To check if the user is already subscribed to the topic
-    _getIsSubscribed().then((isSubscribed) {
+/*     _getIsSubscribed().then((isSubscribed) {
       if (!isSubscribed) {
         _fcm.subscribeToTopic("learn").then((value) {
           _setIsSubscribed(true);
@@ -91,10 +91,11 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
           _setIsSubscribed(false);
         });
       }
-    });
+    }); */
 
     //_getIsFcmConfigured().then((value) {
     // if (!value) {
+/*
     _fcm.configure(
       onMessage: (Map<String, dynamic> message) async {
         /// Called whenever the app is in foreground and receives a notification
@@ -139,6 +140,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         _takeNotificationAction(message, context, false);
       },
     );
+*/
     // }
     //});
   }
@@ -351,11 +353,12 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
 
   /// Setup remote config and fetch value of key: current_version
   setupRemoteConfig() async {
-    final RemoteConfig remoteConfig = await RemoteConfig.instance;
+    //final RemoteConfig remoteConfig = await RemoteConfig.instance;
     // Enable developer mode to relax fetch throttling
     // TODO: remove in prod / Enable in debug mode for faster testing
     //remoteConfig.setConfigSettings(RemoteConfigSettings(debugMode: true));
     /// if network is weak and fetching fails, set default value
+    /*
     remoteConfig.setDefaults(<String, dynamic>{
       'current_version': versionNumber,
     });
@@ -366,6 +369,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     } else {
       //do nothing
     }
+    */
   }
 
   /// Build a snackbar to notify user that a new update is available

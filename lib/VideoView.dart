@@ -1,4 +1,4 @@
-import 'package:firebase_admob/firebase_admob.dart';
+//import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_widget_guide/utils.dart';
@@ -38,7 +38,7 @@ class _VideoViewState extends State<VideoView> {
           enableCaption: false),
     );
     //TODO: Add real ad unit id
-    Ads.showBannerAd(BannerAd.testAdUnitId);
+    //Ads.showBannerAd(BannerAd.testAdUnitId);
     _lockInPortrait();
     super.initState();
   }

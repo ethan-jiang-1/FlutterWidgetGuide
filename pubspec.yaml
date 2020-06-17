@@ -23,12 +23,12 @@ dependencies:
   youtube_player_flutter: ^6.1.1
   transparent_image: ^1.0.0
   package_info: ^0.4.0+6
-  firebase_core: ^0.4.2
-  firebase_analytics: ^5.0.9
-  firebase_remote_config: ^0.3.0
+  #firebase_core: 0.4.5
+  #firebase_analytics: ^5.0.9
+  #firebase_remote_config: ^0.3.0
   shared_preferences: ^0.5.3+4
-  firebase_messaging: ^6.0.9
-  firebase_admob: ^0.9.3+2
+  #firebase_messaging: ^6.0.9
+  #firebase_admob: ^0.9.3+2
   provider: ^4.0.1
 
 dev_dependencies:

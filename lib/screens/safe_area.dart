@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../Ads.dart';
+import 'home_page.dart';
 
 class SafeAreaWidget extends StatefulWidget {
   @override
@@ -47,6 +48,19 @@ class _SafeAreaWidgetState extends State<SafeAreaWidget> {
                 _isEnabled == true ? _isEnabled = false : _isEnabled = true;
               }),
               child: Text(_isEnabled ? "Disable SafeArea" : "Enable SafeArea"),
+            ),
+
+            ///Press this button to toggle the value of _isEnabled variable
+            RaisedButton(
+              textColor: Colors.white,
+              color: Colors.indigo,
+              onPressed: () =>  Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => HomePage(),
+                ) ,
+              ),
+              child: Text("Go back"),
             ),
 
             Container(

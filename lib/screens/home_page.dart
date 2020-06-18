@@ -328,7 +328,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
               ),
               GestureDetector(
                 child: Padding(
-                  padding: EdgeInsets.only(left: 10.0, right: 8.0),
+                  padding: EdgeInsets.only(left: 8.0, right: 8.0),
                   child: CircleAvatar(
                     radius: 14.0,
                     backgroundImage: AssetImage('assets/images/dp.png'),

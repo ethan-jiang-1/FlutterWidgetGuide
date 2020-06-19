@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
               children: <Widget>[
                 SizedBox(height: 8),
                 Header(),
-                SizedBox(height: 40),
+                SizedBox(height: 24),
                 Tabs(),
                 SizedBox(height: 8),
                 SlidingCardsView(),

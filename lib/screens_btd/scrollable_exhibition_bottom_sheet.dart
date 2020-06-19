@@ -107,12 +107,12 @@ class MyEventItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 8),
+      padding: EdgeInsets.symmetric(vertical: 2),
       child: Transform.scale(
         alignment: Alignment.topLeft,
         scale: 1 / 3 + 2 / 3 * percentageCompleted,
         child: SizedBox(
-          height: 120,
+          height: 126,
           child: Row(
             children: <Widget>[
               ClipRRect(
@@ -151,8 +151,8 @@ class MyEventItem extends StatelessWidget {
   Widget _buildContent() {
     return Column(
       children: <Widget>[
-        Text(event.title, style: TextStyle(fontSize: 16)),
-        SizedBox(height: 8),
+        Text(event.title, style: TextStyle(fontSize: 14)),
+        SizedBox(height: 2),
         Row(
           children: <Widget>[
             Text(
@@ -177,10 +177,10 @@ class MyEventItem extends StatelessWidget {
         Spacer(),
         Row(
           children: <Widget>[
-            Icon(Icons.place, color: Colors.grey.shade400, size: 16),
+            Icon(Icons.place, color: Colors.grey.shade400, size: 14),
             Text(
               'Science Park 10 25A',
-              style: TextStyle(color: Colors.grey.shade400, fontSize: 13),
+              style: TextStyle(color: Colors.grey.shade400, fontSize: 12),
             )
           ],
         )

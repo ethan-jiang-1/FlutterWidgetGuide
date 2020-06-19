@@ -15,7 +15,7 @@ class MyGteApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         brightness: Brightness.dark,
         fontFamily: 'Deligne',
-        textTheme: TextTheme(body1: TextStyle(fontSize: 28)),
+        textTheme: TextTheme(/*body1*/bodyText2: TextStyle(fontSize: 28)),
       ),
       home: MyHomePage(),
     );
@@ -213,7 +213,7 @@ class MainText extends StatelessWidget {
           'Discover the awe-inspiring\nPyramids of Fize and ancient Egypt\'s',
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontSize: MediaQuery.of(context).size.shortestSide > 400 ? 60 : 40,
+            fontSize: MediaQuery.of(context).size.shortestSide > 400 ? 40 : 32,
           ),
         ),
         SizedBox(height: 32),
@@ -253,11 +253,11 @@ class Page1 extends StatelessWidget {
             children: <Widget>[
               Text(
                 'Egyptian',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
               ),
               Text(
                 ' civilization',
-                style: TextStyle(color: Colors.black, fontSize: 30),
+                style: TextStyle(color: Colors.black, fontSize: 24),
               )
             ],
           ),
@@ -268,12 +268,14 @@ class Page1 extends StatelessWidget {
                 Expanded(
                   child: Text(
                     'The ancient Egyptian civilization, famous for its pyramids, pharaohs, mummies, and tombs, flourished for thousands for thousands of yers. But what was its lasting impact?',
+                    style: TextStyle(color: Colors.black, fontSize: 16),
                   ),
                 ),
                 SizedBox(width: 64),
                 Expanded(
                   child: Text(
                     'Watch the video below to learn how ancient Egypt contributed to modern-day society with its many cultural developments, particularly in language & mathematics',
+                    style: TextStyle(color: Colors.black, fontSize: 16),
                   ),
                 )
               ],
@@ -281,10 +283,12 @@ class Page1 extends StatelessWidget {
           else ...[
             Text(
               'The ancient Egyptian civilization, famous for its pyramids, pharaohs, mummies, and tombs, flourished for thousands for thousands of yers. But what was its lasting impact?',
+              style: TextStyle(color: Colors.black, fontSize: 16),
             ),
             SizedBox(height: 16),
             Text(
               'Watch the video below to learn how ancient Egypt contributed to modern-day society with its many cultural developments, particularly in language & mathematics',
+              style: TextStyle(color: Colors.black, fontSize: 16),
             )
           ],
           SizedBox(height: height * 0.1),

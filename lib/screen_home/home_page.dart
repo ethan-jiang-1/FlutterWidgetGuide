@@ -303,7 +303,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
               Text(
                 Utils.appName,
                 style: TextStyle(
-                    fontFamily: Utils.ubuntuRegularFont, fontSize: 16),
+                    fontFamily: Utils.ubuntuRegularFont, fontSize: 14),
               ),
               SizedBox(
                 width: 0.0,

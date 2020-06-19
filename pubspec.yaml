@@ -31,6 +31,8 @@ dependencies:
   #firebase_admob: ^0.9.3+2
   provider: ^4.0.1
 
+  line_icons: ^0.2.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -58,6 +60,7 @@ flutter:
       - assets/efe-kurnaz.jpg
       - assets/rodion-kutsaev.jpeg
       - assets/steve-johnson.jpeg      
+      - images/
 
   fonts:
       - family: Ubuntu
@@ -86,3 +89,9 @@ flutter:
           weight: 800
         - asset: fonts/SF-Pro-Display-Black.otf
           weight: 900
+      - family: IbarraRealNova
+        fonts:
+          - asset: fonts/Ibarra_Real_Nova/IbarraRealNova-Regular.ttf
+      - family: Deligne
+        fonts:
+          - asset: fonts/OPTIDeligne-Normal.otf

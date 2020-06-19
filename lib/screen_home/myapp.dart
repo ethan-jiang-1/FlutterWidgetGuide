@@ -87,6 +87,7 @@ import 'package:flutter_widget_guide/screens_btd/main_btd.dart';
 import 'package:flutter_widget_guide/screens_dc/custom_drawer_guitar.dart';
 
 import 'package:flutter_widget_guide/screens_dc/main_dc.dart';
+import 'package:flutter_widget_guide/screens_gte/main_gte.dart';
 
 import 'package:flutter_widget_guide/settings.dart';
 import 'package:flutter_widget_guide/themes.dart';
@@ -227,8 +228,8 @@ class _MyApp extends StatelessWidget {
         Utils.extra_dc_main: (BuildContext context) => MyDcApp(),
         //Utils.extra_dc_demo1: (BuildContext context) => CustomDrawer(),
         Utils.extra_dc_demo2: (BuildContext context) => CustomGuitarDrawer(),
-
         Utils.extra_btd_main: (BuildContext context) => MyBtdApp(),
+        Utils.extra_gte_main: (BuildContext context) => MyGteApp(),
 
       },
     );

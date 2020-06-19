@@ -33,6 +33,10 @@ dependencies:
 
   line_icons: ^0.2.0
 
+  flare_flutter: ^2.0.3
+  flare_dart: ^2.3.4
+  meta: ^1.0.5
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -60,6 +64,7 @@ flutter:
       - assets/efe-kurnaz.jpg
       - assets/rodion-kutsaev.jpeg
       - assets/steve-johnson.jpeg      
+      - assets/Teddy.flr
       - images/
 
   fonts:
@@ -95,3 +100,6 @@ flutter:
       - family: Deligne
         fonts:
           - asset: fonts/OPTIDeligne-Normal.otf
+      - family: RobotoMedium
+        fonts:
+          - asset: assets/fonts/Roboto-Medium.ttf

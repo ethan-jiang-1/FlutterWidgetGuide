@@ -195,6 +195,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                 extraUiButton(context, "draw_challenge_demo2",  Utils.extra_dc_demo2),
                 extraUiButton(context, "buy_ticket_design_demo",  Utils.extra_btd_main),
                 extraUiButton(context, "go_to_egypt_demo",  Utils.extra_gte_main),
+                extraUiButton(context, "flight_survey_demo",  Utils.extra_fs_main),
               ],
             ),
           );

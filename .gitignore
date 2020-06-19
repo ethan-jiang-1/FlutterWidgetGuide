@@ -13,7 +13,14 @@ upload_certificate.pem
 
 FlutterWidgetGuide.iml
 
+*.orig 
+*.jks
+
+.flutter-plugins-dependencies
+.pubspec.lock
+
 # Android related
+android/app/bin
 android/**/gradle-wrapper.jar
 android/.gradle
 android/captures/
@@ -23,4 +30,7 @@ android/local.properties
 android/**/GeneratedPluginRegistrant.java
 android/key.properties
 android/app/google-services.json
-*.jks
+android/app/.project
+android/.project
+
+

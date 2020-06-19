@@ -126,22 +126,17 @@ class _MyApp extends StatelessWidget {
       //all the app routes are listed here
       routes: <String, WidgetBuilder>{
         Utils.codeRoute: (BuildContext context) => CodeScreen(code: ""),
-        Utils.videoView: (BuildContext context) => VideoView(
-              videoUrl: "",
-              title: "",
-            ),
+        Utils.videoView: (BuildContext context) => VideoView(videoUrl: "", title: "", ),
         Utils.webView: (BuildContext context) => WebViewWidget(url: ""),
         Utils.homeRoute: (BuildContext context) => HomePage(),
         Utils.safeArea: (BuildContext context) => SafeAreaWidget(),
         Utils.expanded: (BuildContext context) => ExpandedWidget(),
         Utils.wrap: (BuildContext context) => WrapWidget(),
-        Utils.animatedContainer: (BuildContext context) =>
-            AnimatedContainerWidget(),
+        Utils.animatedContainer: (BuildContext context) => AnimatedContainerWidget(),
         Utils.opacity: (BuildContext context) => OpacityWidget(),
         Utils.futureBuilder: (BuildContext context) => FutureBuilderWidget(),
         Utils.fadeTransition: (BuildContext context) => FadeTransitionWidget(),
-        Utils.floatingActionButton: (BuildContext context) =>
-            FloatingActionButtonWidget(),
+        Utils.floatingActionButton: (BuildContext context) => FloatingActionButtonWidget(),
         Utils.pageView: (BuildContext context) => PageViewWidget(),
         Utils.table: (BuildContext context) => TableWidget(),
         Utils.sliverAppBar: (BuildContext context) => SliverAppBarWidget(),
@@ -162,12 +157,10 @@ class _MyApp extends StatelessWidget {
         Utils.backDropFilter: (BuildContext context) => BackdropFilterWidget(),
         Utils.align: (BuildContext context) => AlignWidget(),
         Utils.positioned: (BuildContext context) => PositionedWidget(),
-        Utils.animatedBuilder: (BuildContext context) =>
-            AnimatedBuilderWidget(),
+        Utils.animatedBuilder: (BuildContext context) => AnimatedBuilderWidget(),
         Utils.dismissible: (BuildContext context) => DismissibleWidget(),
         Utils.sizedBox: (BuildContext context) => SizedBoxWidget(),
-        Utils.valueListenableBuilder: (BuildContext context) =>
-            ValueListenableBuilderWidget(),
+        Utils.valueListenableBuilder: (BuildContext context) => ValueListenableBuilderWidget(),
         Utils.draggable: (BuildContext context) => DraggableWidget(),
         Utils.animatedList: (BuildContext context) => AnimatedListWidget(),
         Utils.flexible: (BuildContext context) => FlexibleWidget(),
@@ -179,22 +172,16 @@ class _MyApp extends StatelessWidget {
         Utils.limitedBox: (BuildContext context) => LimitedBoxWidget(),
         Utils.placeholder: (BuildContext context) => PlaceholderWidget(),
         Utils.richText: (BuildContext context) => RichTextWidget(),
-        Utils.reorderableListView: (BuildContext context) =>
-            ReorderableListViewWidget(),
-        Utils.animatedSwitcher: (BuildContext context) =>
-            AnimatedSwitcherWidget(),
-        Utils.animatedPositioned: (BuildContext context) =>
-            AnimatedPositionedWidget(),
-        Utils.animatedPadding: (BuildContext context) =>
-            AnimatedPaddingWidget(),
+        Utils.reorderableListView: (BuildContext context) => ReorderableListViewWidget(),
+        Utils.animatedSwitcher: (BuildContext context) => AnimatedSwitcherWidget(),
+        Utils.animatedPositioned: (BuildContext context) =>  AnimatedPositionedWidget(),
+        Utils.animatedPadding: (BuildContext context) => AnimatedPaddingWidget(),
         Utils.indexedStack: (BuildContext context) => IndexedStackWidget(),
         Utils.semantics: (BuildContext context) => SemanticsWidget(),
         Utils.constrainedBox: (BuildContext context) => ConstrainedBoxWidget(),
         Utils.stack: (BuildContext context) => StackWidget(),
-        Utils.animatedOpacity: (BuildContext context) =>
-            AnimatedOpacityWidget(),
-        Utils.fractionallySizedBox: (BuildContext context) =>
-            FractionallySizedBoxWidget(),
+        Utils.animatedOpacity: (BuildContext context) => AnimatedOpacityWidget(),
+        Utils.fractionallySizedBox: (BuildContext context) => FractionallySizedBoxWidget(),
         Utils.listView: (BuildContext context) => ListViewWidget(),
         Utils.listTile: (BuildContext context) => ListTileWidget(),
         Utils.container: (BuildContext context) => ContainerWidget(),
@@ -202,10 +189,8 @@ class _MyApp extends StatelessWidget {
         Utils.dataTable: (BuildContext context) => DataTableWidget(),
         Utils.slider: (BuildContext context) => SliderWidget(),
         Utils.alertDialog: (BuildContext context) => AlertDialogWidget(),
-        Utils.animatedCrossFade: (BuildContext context) =>
-            AnimatedCrossFadeWidget(),
-        Utils.draggableScrollableSheet: (BuildContext context) =>
-            DraggableScrollableSheetWidget(),
+        Utils.animatedCrossFade: (BuildContext context) => AnimatedCrossFadeWidget(),
+        Utils.draggableScrollableSheet: (BuildContext context) => DraggableScrollableSheetWidget(),
         Utils.colorFiltered: (BuildContext context) => ColorFilteredWidget(),
         Utils.toggleButtons: (BuildContext context) => ToggleButtonsWidget(),
         Utils.cupertinoActionSheet: (BuildContext context) => CupertinoActionSheetWidget(),

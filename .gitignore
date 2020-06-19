@@ -9,6 +9,9 @@ build/
 .flutter-plugins
 .idea
 
+flutter-plugins-dependencies
+pubspec.lock
+
 upload_certificate.pem
 
 FlutterWidgetGuide.iml

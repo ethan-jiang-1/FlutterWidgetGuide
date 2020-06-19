@@ -79,6 +79,11 @@ import 'package:flutter_widget_guide/screens/transform.dart';
 import 'package:flutter_widget_guide/screens/tween_animation_builder.dart';
 import 'package:flutter_widget_guide/screens/value_listenable_builder.dart';
 import 'package:flutter_widget_guide/screens/wrap.dart';
+import 'package:flutter_widget_guide/screens_dc/custom_drawer.dart';
+import 'package:flutter_widget_guide/screens_dc/custom_drawer_guitar.dart';
+
+import 'package:flutter_widget_guide/screens_dc/main_dc.dart';
+
 import 'package:flutter_widget_guide/settings.dart';
 import 'package:flutter_widget_guide/themes.dart';
 import 'package:flutter_widget_guide/utils.dart';
@@ -122,8 +127,9 @@ class _MyApp extends StatelessWidget {
           Provider.of<Settings>(context).isDarkMode ? kDarkTheme : kLightTheme,
       debugShowCheckedModeBanner: false,
       showPerformanceOverlay: false,
-      home: HomePage(),
+      //home: HomePage(),
       //all the app routes are listed here
+      initialRoute: '/',
       routes: <String, WidgetBuilder>{
         Utils.codeRoute: (BuildContext context) => CodeScreen(code: ""),
         Utils.videoView: (BuildContext context) => VideoView(videoUrl: "", title: "", ),
@@ -210,7 +216,14 @@ class _MyApp extends StatelessWidget {
         Utils.cupertinoActivityIndicator: (BuildContext context) => CupertinoActivityIndicatorWidget(),
         Utils.clipOval: (BuildContext context) => ClipOvalWidget(),
         Utils.animatedWidget: (BuildContext context) => AnimatedWidgett(),
-        Utils.padding: (BuildContext context) => PaddingWidget()
+        Utils.padding: (BuildContext context) => PaddingWidget(),
+        Utils.home: (BuildContext context) => HomePage(),
+        Utils.root: (BuildContext context) => HomePage(),
+
+        Utils.extra_dc_main: (BuildContext context) => MyDcApp(),
+        Utils.extra_dc_demo1: (BuildContext context) => CustomDrawer(),
+        Utils.extra_dc_demo2: (BuildContext context) => CustomGuitarDrawer(),
+
       },
     );
   }

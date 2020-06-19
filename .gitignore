@@ -9,8 +9,8 @@ build/
 .flutter-plugins
 .idea
 
-flutter-plugins-dependencies
-pubspec.lock
+.flutter-plugins-dependencies
+.pubspec.lock
 *.orig
 
 upload_certificate.pem

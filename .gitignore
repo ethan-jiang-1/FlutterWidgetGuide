@@ -9,15 +9,18 @@ build/
 .flutter-plugins
 .idea
 
-.flutter-plugins-dependencies
-.pubspec.lock
-*.orig
-
 upload_certificate.pem
 
 FlutterWidgetGuide.iml
 
+*.orig 
+*.jks
+
+.flutter-plugins-dependencies
+.pubspec.lock
+
 # Android related
+android/app/bin
 android/**/gradle-wrapper.jar
 android/.gradle
 android/captures/

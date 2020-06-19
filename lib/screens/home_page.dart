@@ -151,6 +151,57 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     return homePageScaffold(context);
   }
 
+  Widget extraUiButton(context, text, route) {
+    return OutlineButton(
+        child: Text(text),
+        onPressed: () => {
+          //Utils.launchURL("${Utils.slack_invite}")
+          Navigator.pushNamed(context, route)
+
+          }, 
+        borderSide: BorderSide(color: Colors.blue),
+        shape: RoundedRectangleBorder(
+            borderRadius:
+                BorderRadius.circular(30.0))
+    );
+  }                
+
+  void _bringExtraUiEffect(context) {
+    showDialog(
+      context: context,
+
+      /// StatefulBuilder is used here to make setState work on AlertDialog
+      /// For checkbox state functionality
+      builder: (context) => StatefulBuilder(
+        builder: (context, setState) {
+          return AlertDialog(
+            title: Center(
+              child: Text(
+                "Extra UI effects",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: Utils.ubuntuRegularFont),
+              ),
+            ),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                extraUiButton(context, "draw_challenge_demo1",  Utils.extra_dc_main),
+                //extraUiButton(context, "draw_challenge_demo1",  Utils.extra_dc_demo1),
+                extraUiButton(context, "draw_challenge_demo2",  Utils.extra_dc_demo2),
+                Spacer(), 
+                extraUiButton(context, "draw_challenge_demo2",  Utils.extra_dc_demo2),
+              ],
+            ),
+          );
+        },
+      ),
+    );
+  }
+
   Widget homePageScaffold(BuildContext context) => Theme(
         data: Theme.of(context).copyWith(
           canvasColor: Colors.transparent,
@@ -174,83 +225,13 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                   ),
                 ),
                 label: Text(
-                  "Join us",
+                  "Extra UI effects",
                   style: TextStyle(
                       color: Colors.black87,
                       fontFamily: Utils.ubuntuRegularFont),
                 ),
                 onPressed: () => {
-                  showDialog(
-                    context: context,
-
-                    /// StatefulBuilder is used here to make setState work on AlertDialog
-                    /// For checkbox state functionality
-                    builder: (context) => StatefulBuilder(
-                      builder: (context, setState) {
-                        return AlertDialog(
-                          title: Center(
-                            child: Text(
-                              "Join us at\nFlutter Worldwide",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: Utils.ubuntuRegularFont),
-                            ),
-                          ),
-                          content: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: <Widget>[
-                              Text(
-                                "My main motive here is to create a community of flutter developers"
-                                " from all around the world. Join us to expand your knowledge on Flutter"
-                                " with the rest of the world.",
-                                style: TextStyle(
-                                  fontSize: 14.0,
-                                  fontFamily: Utils.ubuntuRegularFont,
-                                ),
-                                textAlign: TextAlign.center,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: OutlineButton(
-                                    child: Text("Get an Invite"),
-                                    onPressed: () => Utils.launchURL(
-                                        "${Utils.slack_invite}"),
-                                    borderSide: BorderSide(color: Colors.blue),
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(30.0))),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: <Widget>[
-                                    Text("Already joined? \nCheck to hide FAB"),
-                                    Checkbox(
-                                      value: isCheckBoxChecked,
-                                      activeColor: Colors.blue,
-                                      onChanged: (bool isChecked) {
-                                        setState(
-                                          () {
-                                            isCheckBoxChecked = isChecked;
-                                          },
-                                        );
-                                        _hideFabForever(isChecked);
-                                      },
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        );
-                      },
-                    ),
-                  ),
+                  _bringExtraUiEffect(context),
                 },
               ),
             ),

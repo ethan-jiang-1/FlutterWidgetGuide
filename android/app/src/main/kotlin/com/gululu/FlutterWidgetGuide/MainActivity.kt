@@ -1,4 +1,4 @@
-package com.annsh.FlutterWidgetGuide
+package com.gululu.FlutterWidgetGuide
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -115,6 +115,13 @@ class Utils {
   static const String clipOval = "/ClipOval";
   static const String animatedWidget = "/AnimatedWidget";
   static const String padding = "/Padding";
+  
+  static const String home = "/Home";
+  static const String root = "/";
+
+  static const String extra_dc_main = "/ex_dc_main";
+  static const String extra_dc_demo1 = "/ex_dc_demo1";
+  static const String extra_dc_demo2 = "/ex_dc_demo2";
 
   static const String rateApp = "/Rate the App";
   static const String slack_invite =

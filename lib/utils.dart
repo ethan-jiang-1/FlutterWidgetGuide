@@ -123,6 +123,8 @@ class Utils {
   static const String extra_dc_demo1 = "/ex_dc_demo1";
   static const String extra_dc_demo2 = "/ex_dc_demo2";
 
+  static const String extra_btd_main = "ex_btd_main";
+
   static const String rateApp = "/Rate the App";
   static const String slack_invite =
       "https://join.slack.com/t/flutter-worldwide/shared_invite/enQtNzMyMjM3Nzc2Njc0LTdmYWI5ZGU5YjgxNjliYzhjZTU0MWNkZTA5MjY4ZmJiMjg4ZGQ2ZDQwNDdiOTdiOWVkZDA2NjY5YjllMGQ1M2M";

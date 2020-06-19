@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../Ads.dart';
-import 'home_page.dart';
+import 'package:flutter_widget_guide/screen_home/home_page.dart';
 
 class SafeAreaWidget extends StatefulWidget {
   @override

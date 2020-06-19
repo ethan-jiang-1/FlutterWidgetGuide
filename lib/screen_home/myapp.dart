@@ -1,5 +1,9 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_guide/CodeScreen.dart';
+
+import 'package:flutter_widget_guide/screen_home/home_page.dart';
+
 import 'package:flutter_widget_guide/screens/WebViewWidget.dart';
 import 'package:flutter_widget_guide/screens/absorb_pointer.dart';
 import 'package:flutter_widget_guide/screens/alert_dialog_widget.dart';
@@ -42,7 +46,6 @@ import 'package:flutter_widget_guide/screens/fractionally_sizedbox.dart';
 import 'package:flutter_widget_guide/screens/future_builder.dart';
 import 'package:flutter_widget_guide/screens/hero.dart';
 import 'package:flutter_widget_guide/screens/hero2.dart';
-import 'package:flutter_widget_guide/screens/home_page.dart';
 import 'package:flutter_widget_guide/screens/ignore_pointer.dart';
 import 'package:flutter_widget_guide/screens/image_widget.dart';
 import 'package:flutter_widget_guide/screens/inherited_model.dart';
@@ -80,7 +83,7 @@ import 'package:flutter_widget_guide/screens/tween_animation_builder.dart';
 import 'package:flutter_widget_guide/screens/value_listenable_builder.dart';
 import 'package:flutter_widget_guide/screens/wrap.dart';
 import 'package:flutter_widget_guide/screens_btd/main_btd.dart';
-import 'package:flutter_widget_guide/screens_dc/custom_drawer.dart';
+//import 'package:flutter_widget_guide/screens_dc/custom_drawer.dart';
 import 'package:flutter_widget_guide/screens_dc/custom_drawer_guitar.dart';
 
 import 'package:flutter_widget_guide/screens_dc/main_dc.dart';
@@ -91,12 +94,12 @@ import 'package:flutter_widget_guide/utils.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'VideoView.dart';
-import 'screens/drawer_widget.dart';
-import 'screens/indexed_stack.dart';
-import 'screens/listwheelscrollview_widget.dart';
-import 'screens/shadermask_widget.dart';
-import 'screens/snackbar_widget.dart';
+import '../VideoView.dart';
+import '../screens/drawer_widget.dart';
+import '../screens/indexed_stack.dart';
+import '../screens/listwheelscrollview_widget.dart';
+import '../screens/shadermask_widget.dart';
+import '../screens/snackbar_widget.dart';
 
 class MyApp extends StatelessWidget {
   @override

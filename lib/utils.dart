@@ -123,7 +123,8 @@ class Utils {
   static const String extra_dc_demo1 = "/ex_dc_demo1";
   static const String extra_dc_demo2 = "/ex_dc_demo2";
 
-  static const String extra_btd_main = "ex_btd_main";
+  static const String extra_btd_main = "/ex_btd_main";
+  static const String extra_gte_main = "/ex_gte_main";
 
   static const String rateApp = "/Rate the App";
   static const String slack_invite =

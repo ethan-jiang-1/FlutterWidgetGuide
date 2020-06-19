@@ -11,7 +11,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../Ads.dart';
 import '../profile_screen.dart';
-import 'WebViewWidget.dart';
+
+import 'package:flutter_widget_guide/screens/WebViewWidget.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -192,8 +193,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                 extraUiButton(context, "draw_challenge_demo1",  Utils.extra_dc_main),
                 //extraUiButton(context, "draw_challenge_demo1",  Utils.extra_dc_demo1),
                 extraUiButton(context, "draw_challenge_demo2",  Utils.extra_dc_demo2),
-                Spacer(), 
                 extraUiButton(context, "buy_ticket_design_demo",  Utils.extra_btd_main),
+                extraUiButton(context, "go_to_egypt_demo",  Utils.extra_gte_main),
               ],
             ),
           );

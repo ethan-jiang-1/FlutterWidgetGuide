@@ -115,6 +115,7 @@ class MyApp extends StatelessWidget {
 class _MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    print("_MyApp build required...");
     return MaterialApp(
       title: Utils.appName,
       theme:

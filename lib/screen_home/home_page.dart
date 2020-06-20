@@ -186,20 +186,24 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                     fontFamily: Utils.ubuntuRegularFont),
               ),
             ),
-            content: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                extraUiButton(context, "draw_challenge_demo1",  Utils.extra_dc_main),
-                //extraUiButton(context, "draw_challenge_demo1",  Utils.extra_dc_demo1),
-                extraUiButton(context, "draw_challenge_demo2",  Utils.extra_dc_demo2),
-                extraUiButton(context, "buy_ticket_design_demo",  Utils.extra_btd_main),
-                extraUiButton(context, "go_to_egypt_demo",  Utils.extra_gte_main),
-                extraUiButton(context, "flight_survey_demo",  Utils.extra_fs_main),
-                extraUiButton(context, "flare_flutter_teddy_demo",  Utils.extra_fft_main),
-                extraUiButton(context, "radial_menu_demo",  Utils.extra_rm_main),
-              ],
-            ),
+            content: 
+              SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  extraUiButton(context, "draw_challenge_demo1",  Utils.extra_dc_main),
+                  //extraUiButton(context, "draw_challenge_demo1",  Utils.extra_dc_demo1),
+                  extraUiButton(context, "draw_challenge_demo2",  Utils.extra_dc_demo2),
+                  extraUiButton(context, "buy_ticket_design_demo",  Utils.extra_btd_main),
+                  extraUiButton(context, "go_to_egypt_demo",  Utils.extra_gte_main),
+                  extraUiButton(context, "flight_survey_demo",  Utils.extra_fs_main),
+                  extraUiButton(context, "flare_flutter_teddy_demo",  Utils.extra_fft_main),
+                  extraUiButton(context, "radial_menu_demo",  Utils.extra_rm_main),
+                  extraUiButton(context, "liquid_swipe_demo",  Utils.extra_ls_main),
+                ],
+              ),
+            )
           );
         },
       ),

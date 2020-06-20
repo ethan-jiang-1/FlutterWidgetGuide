@@ -90,6 +90,7 @@ import 'package:flutter_widget_guide/screens_dc/main_dc.dart';
 import 'package:flutter_widget_guide/screens_fft/main_fft.dart';
 import 'package:flutter_widget_guide/screens_fs/main_fs.dart';
 import 'package:flutter_widget_guide/screens_gte/main_gte.dart';
+import 'package:flutter_widget_guide/screens_ls/main_ls.dart';
 import 'package:flutter_widget_guide/screens_rm/main_rm.dart';
 
 import 'package:flutter_widget_guide/settings.dart';
@@ -236,6 +237,7 @@ class _MyApp extends StatelessWidget {
         Utils.extra_fs_main: (BuildContext context) => MyFsApp(),
         Utils.extra_fft_main: (BuildContext context) => MyFftApp(),
         Utils.extra_rm_main: (BuildContext context) => MyRmApp(),
+        Utils.extra_ls_main: (BuildContext context) => MyLsApp(),
 
       },
     );

@@ -128,6 +128,7 @@ class Utils {
   static const String extra_fs_main = "/ex_fs_main";
   static const String extra_fft_main = "/ex_fft_main";
   static const String extra_rm_main = "/ex_rm_main";
+  static const String extra_ls_main = "/ex_ls_main";
 
   static const String rateApp = "/Rate the App";
   static const String slack_invite =

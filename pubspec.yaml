@@ -36,7 +36,7 @@ dependencies:
   flare_dart: ^2.3.4
   meta: ^1.0.5
   liquid_swipe: ^1.4.3
-  
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -67,7 +67,9 @@ flutter:
       - assets/Teddy.flr
       - images/
       - assets/img/
-
+      - assets/icons/
+      - assets/images/
+      
   fonts:
       - family: Ubuntu
         fonts:
@@ -108,3 +110,10 @@ flutter:
         fonts:
           - asset: assets/font/Product_Sans_Bold.ttf
           - asset: assets/font/Product_Sans_Regular.ttf
+      - family: Poppins
+        fonts:
+          - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+          - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+            weight: 600
+          - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+            weight: 700

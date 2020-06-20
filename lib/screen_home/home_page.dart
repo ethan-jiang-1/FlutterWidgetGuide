@@ -82,68 +82,6 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         }
       },
     );
-
-    /// To check if the user is already subscribed to the topic
-/*     _getIsSubscribed().then((isSubscribed) {
-      if (!isSubscribed) {
-        _fcm.subscribeToTopic("learn").then((value) {
-          _setIsSubscribed(true);
-        }, onError: (e) {
-          _setIsSubscribed(false);
-        });
-      }
-    }); */
-
-    //_getIsFcmConfigured().then((value) {
-    // if (!value) {
-/*
-    _fcm.configure(
-      onMessage: (Map<String, dynamic> message) async {
-        /// Called whenever the app is in foreground and receives a notification
-        /// A dialog box is shown to the user in this case
-        showDialog(
-          context: context,
-          builder: (context) => AlertDialog(
-            content: ListTile(
-              title: Text("A new message from the developer!"),
-              subtitle: Padding(
-                padding: const EdgeInsets.only(top: 8.0),
-                child: Text("Click open to visit the link"),
-              ),
-            ),
-            actions: <Widget>[
-              FlatButton(
-                child: Text(
-                  'Cancel',
-                  style: TextStyle(color: Colors.grey[500]),
-                ),
-                onPressed: () => Navigator.of(context).pop(),
-              ),
-              FlatButton(
-                child: Text('Open'),
-                onPressed: () => {
-                  Navigator.of(context).pop(),
-                  _takeNotificationAction(message, context, true),
-                },
-              ),
-            ],
-          ),
-        );
-      },
-      onBackgroundMessage: backgroundHandle,
-      onLaunch: (Map<String, dynamic> message) async {
-        /// Called whenever the app is killed and receives a notification
-        _takeNotificationAction(message, context, false);
-      },
-      onResume: (Map<String, dynamic> message) async {
-        /// Called whenever the app is running in background
-        /// and receives a notification
-        _takeNotificationAction(message, context, false);
-      },
-    );
-*/
-    // }
-    //});
   }
 
   @override
@@ -201,6 +139,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                   extraUiButton(context, "flare_flutter_teddy_demo",  Utils.extra_fft_main),
                   extraUiButton(context, "radial_menu_demo",  Utils.extra_rm_main),
                   extraUiButton(context, "liquid_swipe_demo",  Utils.extra_ls_main),
+                  extraUiButton(context, "covid_19_demo",  Utils.extra_c19_main),
                 ],
               ),
             )
@@ -375,16 +314,6 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       ),
     ));
   }
-
-  /// Method to call when user checks checkbox
-  _hideFabForever(bool isChecked) async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setBool('hidefab', isChecked);
-    setState(() {
-      hasJoinedSlack = isChecked;
-    });
-  }
-
   /// Method to get value from shared preferences
   _getValueFromSP() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -396,111 +325,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       }
     });
   }
-
-  _setIsSubscribed(bool isSubscribed) async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    prefs.setBool("subscribed", isSubscribed);
-  }
-
-  Future<bool> _getIsSubscribed() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    if (prefs.getBool("subscribed") == null ||
-        prefs.getBool("subscribed") == false) {
-      return false;
-    } else {
-      return true;
-    }
-  }
 }
 
-/// Use this method to define some kind of a background task
-/// We are not using it, only here for learning purpose
-Future<dynamic> backgroundHandle(Map<String, dynamic> message) {
-  if (message.containsKey('data')) {
-    // Handle data message
-  }
-
-  if (message.containsKey('notification')) {
-    // Handle notification message
-  }
-
-  // Or do other work.
-}
-
-/// Method to be called whenever the app receives a notification
-_takeNotificationAction(
-    Map<String, dynamic> message, BuildContext context, bool isInside) {
-  /// If the notification was opened when app was in background/closed
-  if (!isInside) {
-    showDialog(
-      context: context,
-      builder: (_) => AlertDialog(
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(10.0))),
-        content: Builder(
-          builder: (context) {
-            return Container(
-              height: 100,
-              width: 100,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        CircularProgressIndicator(
-                            valueColor:
-                                AlwaysStoppedAnimation<Color>(Colors.blue)),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 12.0),
-                          child: Text("Loading..."),
-                        )
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            );
-          },
-        ),
-      ),
-    );
-
-    /// To display alert dialog for 3 seconds and take necessary action
-    /// after that
-    Future.delayed(
-      Duration(seconds: 3),
-      () {
-        //remove the loading dialog box
-        Navigator.of(context, rootNavigator: true).pop();
-        if (message['data']['type'] == 'update') {
-          Utils.launchURL(message['data']['url']);
-        } else {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => WebViewWidget(url: message['data']['url']),
-            ),
-          );
-        }
-      },
-    );
-  } else {
-    /// If the notification was opened from inside the app
-    if (message['data']['type'] == 'update') {
-      Utils.launchURL(message['data']['url']);
-    } else {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => WebViewWidget(url: message['data']['url']),
-        ),
-      );
-    }
-  }
-  //_setIsFcmConfigured(true);
-}
 
 Future<bool> _willPopCallback() async {
   /// do something here to release FCM instance so that it doesn't configure

@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_guide/CodeScreen.dart';
+import 'package:flutter_widget_guide/screen_c19/main_c19.dart';
 
 import 'package:flutter_widget_guide/screen_home/home_page.dart';
 
@@ -238,6 +239,7 @@ class _MyApp extends StatelessWidget {
         Utils.extra_fft_main: (BuildContext context) => MyFftApp(),
         Utils.extra_rm_main: (BuildContext context) => MyRmApp(),
         Utils.extra_ls_main: (BuildContext context) => MyLsApp(),
+        Utils.extra_c19_main: (BuildContext context) => MyC19App(),
 
       },
     );

@@ -762,4 +762,5 @@ class Utils {
   static const String extra_ls_main = "/ex_ls_main";
   static const String extra_c19_main = "/ex_c19_main";
   static const String extra_ads_main = "/ex_ads_main";
+  static const String extra_vs_main = "/ex_vs_main";
 }

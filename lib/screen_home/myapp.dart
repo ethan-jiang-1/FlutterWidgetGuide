@@ -94,6 +94,7 @@ import 'package:flutter_widget_guide/screens_fs/main_fs.dart';
 import 'package:flutter_widget_guide/screens_gte/main_gte.dart';
 import 'package:flutter_widget_guide/screens_ls/main_ls.dart';
 import 'package:flutter_widget_guide/screens_rm/main_rm.dart';
+import 'package:flutter_widget_guide/screens_vs/main_vs.dart';
 
 import 'package:flutter_widget_guide/settings.dart';
 import 'package:flutter_widget_guide/themes.dart';
@@ -242,6 +243,7 @@ class _MyApp extends StatelessWidget {
         Utils.extra_ls_main: (BuildContext context) => MyLsApp(),
         Utils.extra_c19_main: (BuildContext context) => MyC19App(),
         Utils.extra_ads_main: (BuildContext context) => MyAdsApp(),
+        Utils.extra_vs_main: (BuildContext context) => MyVsApp(),
 
       },
     );

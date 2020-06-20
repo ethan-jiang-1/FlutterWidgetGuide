@@ -116,34 +116,38 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
           return AlertDialog(
             title: Center(
               child: Text(
-                "Extra UI effects",
+                "UI effects\n(scroll down for more...)",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    fontSize: 20.0,
+                    fontSize: 16.0,
                     fontWeight: FontWeight.bold,
                     fontFamily: Utils.ubuntuRegularFont),
               ),
             ),
-            content: 
-              SingleChildScrollView(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  extraUiButton(context, "draw_challenge_demo1",  Utils.extra_dc_main),
-                  //extraUiButton(context, "draw_challenge_demo1",  Utils.extra_dc_demo1),
-                  extraUiButton(context, "draw_challenge_demo2",  Utils.extra_dc_demo2),
-                  extraUiButton(context, "buy_ticket_design_demo",  Utils.extra_btd_main),
-                  extraUiButton(context, "go_to_egypt_demo",  Utils.extra_gte_main),
-                  extraUiButton(context, "flight_survey_demo",  Utils.extra_fs_main),
-                  extraUiButton(context, "flare_flutter_teddy_demo",  Utils.extra_fft_main),
-                  extraUiButton(context, "radial_menu_demo",  Utils.extra_rm_main),
-                  extraUiButton(context, "liquid_swipe_demo",  Utils.extra_ls_main),
-                  extraUiButton(context, "covid_19_demo",  Utils.extra_c19_main),
-                  extraUiButton(context, "adidas_shoes_demo",  Utils.extra_ads_main),
-                  extraUiButton(context, "veggie_sessions_demo",  Utils.extra_vs_main),
-                ],
-              ),
+            content: SafeArea(
+              child: Scrollbar(
+                isAlwaysShown: true,
+                child: SingleChildScrollView(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          extraUiButton(context, "draw_challenge_demo1",  Utils.extra_dc_main),
+                          //extraUiButton(context, "draw_challenge_demo1",  Utils.extra_dc_demo1),
+                          extraUiButton(context, "draw_challenge_demo2",  Utils.extra_dc_demo2),
+                          extraUiButton(context, "buy_ticket_design_demo",  Utils.extra_btd_main),
+                          extraUiButton(context, "go_to_egypt_demo",  Utils.extra_gte_main),
+                          extraUiButton(context, "flight_survey_demo",  Utils.extra_fs_main),
+                          extraUiButton(context, "flare_flutter_teddy_demo",  Utils.extra_fft_main),
+                          extraUiButton(context, "radial_menu_demo",  Utils.extra_rm_main),
+                          extraUiButton(context, "liquid_swipe_demo",  Utils.extra_ls_main),
+                          extraUiButton(context, "covid_19_demo",  Utils.extra_c19_main),
+                          extraUiButton(context, "adidas_shoes_demo",  Utils.extra_ads_main),
+                          extraUiButton(context, "veggie_sessions_demo",  Utils.extra_vs_main),
+                        ],
+                      ),
+                    ),
+              )
             )
           );
         },

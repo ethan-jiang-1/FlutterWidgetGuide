@@ -65,6 +65,9 @@ flutter:
       - assets/rodion-kutsaev.jpeg
       - assets/steve-johnson.jpeg      
       - assets/Teddy.flr
+      - assets/adidas.png
+      - assets/360.png
+      - assets/cart.png
       - images/
       - assets/img/
       - assets/icons/
@@ -117,3 +120,14 @@ flutter:
             weight: 600
           - asset: assets/fonts/Poppins/Poppins-Bold.ttf
             weight: 700
+      - family: Montserrat-Bold
+        fonts:
+          - asset: assets/Montserrat-Bold.ttf
+
+      - family: Montserrat-Medium
+        fonts:
+          - asset: assets/Montserrat-Medium.ttf
+
+      - family: Montserrat-SemiBold
+        fonts:
+          - asset: assets/Montserrat-SemiBold.ttf            

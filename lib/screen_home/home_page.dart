@@ -140,6 +140,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                   extraUiButton(context, "radial_menu_demo",  Utils.extra_rm_main),
                   extraUiButton(context, "liquid_swipe_demo",  Utils.extra_ls_main),
                   extraUiButton(context, "covid_19_demo",  Utils.extra_c19_main),
+                  extraUiButton(context, "adidas_shoes_demo",  Utils.extra_ads_main),
                 ],
               ),
             )

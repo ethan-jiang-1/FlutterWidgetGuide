@@ -83,6 +83,7 @@ import 'package:flutter_widget_guide/screens/transform.dart';
 import 'package:flutter_widget_guide/screens/tween_animation_builder.dart';
 import 'package:flutter_widget_guide/screens/value_listenable_builder.dart';
 import 'package:flutter_widget_guide/screens/wrap.dart';
+import 'package:flutter_widget_guide/screens_ads/main_ads.dart';
 import 'package:flutter_widget_guide/screens_btd/main_btd.dart';
 //import 'package:flutter_widget_guide/screens_dc/custom_drawer.dart';
 import 'package:flutter_widget_guide/screens_dc/custom_drawer_guitar.dart';
@@ -240,6 +241,7 @@ class _MyApp extends StatelessWidget {
         Utils.extra_rm_main: (BuildContext context) => MyRmApp(),
         Utils.extra_ls_main: (BuildContext context) => MyLsApp(),
         Utils.extra_c19_main: (BuildContext context) => MyC19App(),
+        Utils.extra_ads_main: (BuildContext context) => MyAdsApp(),
 
       },
     );

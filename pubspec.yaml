@@ -32,10 +32,10 @@ dependencies:
   provider: ^4.0.1
 
   line_icons: ^0.2.0
-
   flare_flutter: ^2.0.3
   flare_dart: ^2.3.4
   meta: ^1.0.5
+  liquid_swipe: ^1.4.3
   
 dev_dependencies:
   flutter_test:
@@ -66,6 +66,7 @@ flutter:
       - assets/steve-johnson.jpeg      
       - assets/Teddy.flr
       - images/
+      - assets/img/
 
   fonts:
       - family: Ubuntu
@@ -103,3 +104,7 @@ flutter:
       - family: RobotoMedium
         fonts:
           - asset: assets/fonts/Roboto-Medium.ttf
+      - family: Product Sans
+        fonts:
+          - asset: assets/font/Product_Sans_Bold.ttf
+          - asset: assets/font/Product_Sans_Regular.ttf

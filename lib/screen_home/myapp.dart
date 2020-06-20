@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_guide/CodeScreen.dart';
+import 'package:flutter_widget_guide/screen_c19/main_c19.dart';
 
 import 'package:flutter_widget_guide/screen_home/home_page.dart';
 
@@ -82,6 +83,7 @@ import 'package:flutter_widget_guide/screens/transform.dart';
 import 'package:flutter_widget_guide/screens/tween_animation_builder.dart';
 import 'package:flutter_widget_guide/screens/value_listenable_builder.dart';
 import 'package:flutter_widget_guide/screens/wrap.dart';
+import 'package:flutter_widget_guide/screens_ads/main_ads.dart';
 import 'package:flutter_widget_guide/screens_btd/main_btd.dart';
 //import 'package:flutter_widget_guide/screens_dc/custom_drawer.dart';
 import 'package:flutter_widget_guide/screens_dc/custom_drawer_guitar.dart';
@@ -92,6 +94,7 @@ import 'package:flutter_widget_guide/screens_fs/main_fs.dart';
 import 'package:flutter_widget_guide/screens_gte/main_gte.dart';
 import 'package:flutter_widget_guide/screens_ls/main_ls.dart';
 import 'package:flutter_widget_guide/screens_rm/main_rm.dart';
+import 'package:flutter_widget_guide/screens_vs/main_vs.dart';
 
 import 'package:flutter_widget_guide/settings.dart';
 import 'package:flutter_widget_guide/themes.dart';
@@ -238,6 +241,9 @@ class _MyApp extends StatelessWidget {
         Utils.extra_fft_main: (BuildContext context) => MyFftApp(),
         Utils.extra_rm_main: (BuildContext context) => MyRmApp(),
         Utils.extra_ls_main: (BuildContext context) => MyLsApp(),
+        Utils.extra_c19_main: (BuildContext context) => MyC19App(),
+        Utils.extra_ads_main: (BuildContext context) => MyAdsApp(),
+        Utils.extra_vs_main: (BuildContext context) => MyVsApp(),
 
       },
     );

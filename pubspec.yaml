@@ -36,7 +36,10 @@ dependencies:
   flare_dart: ^2.3.4
   meta: ^1.0.5
   liquid_swipe: ^1.4.3
-  
+  font_awesome_flutter: ^8.8.1
+  intl: ^0.16.1
+  scoped_model: ^1.0.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -65,9 +68,44 @@ flutter:
       - assets/rodion-kutsaev.jpeg
       - assets/steve-johnson.jpeg      
       - assets/Teddy.flr
+      - assets/adidas.png
+      - assets/360.png
+      - assets/cart.png
+      - assets/images/apple.jpg
+      - assets/images/artichoke.jpg
+      - assets/images/asparagus.jpg
+      - assets/images/avocado.jpg
+      - assets/images/blackberry.jpg
+      - assets/images/cantaloupe.jpg
+      - assets/images/cauliflower.jpg
+      - assets/images/endive.jpg
+      - assets/images/fig.jpg
+      - assets/images/grape.jpg
+      - assets/images/green_bell_pepper.jpg
+      - assets/images/habanero.jpg
+      - assets/images/kale.jpg
+      - assets/images/kiwi.jpg
+      - assets/images/lemon.jpg
+      - assets/images/lime.jpg
+      - assets/images/mango.jpg
+      - assets/images/mushroom.jpg
+      - assets/images/nectarine.jpg
+      - assets/images/persimmon.jpg
+      - assets/images/plum.jpg
+      - assets/images/potato.jpg
+      - assets/images/radicchio.jpg
+      - assets/images/radish.jpg
+      - assets/images/squash.jpg
+      - assets/images/strawberry.jpg
+      - assets/images/tangelo.jpg
+      - assets/images/tomato.jpg
+      - assets/images/watermelon.jpg
+      - assets/images/orange_bell_pepper.jpg
       - images/
       - assets/img/
-
+      - assets/icons/
+      - assets/images/
+      
   fonts:
       - family: Ubuntu
         fonts:
@@ -108,3 +146,33 @@ flutter:
         fonts:
           - asset: assets/font/Product_Sans_Bold.ttf
           - asset: assets/font/Product_Sans_Regular.ttf
+      - family: Poppins
+        fonts:
+          - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+          - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+            weight: 600
+          - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+            weight: 700
+      - family: Montserrat-Bold
+        fonts:
+          - asset: assets/Montserrat-Bold.ttf
+
+      - family: Montserrat-Medium
+        fonts:
+          - asset: assets/Montserrat-Medium.ttf
+
+      - family: Montserrat-SemiBold
+        fonts:
+          - asset: assets/Montserrat-SemiBold.ttf
+      - family: NotoSans
+        fonts:
+          - asset: assets/fonts/NotoSans-Regular.ttf
+            weight: 400
+          - asset: assets/fonts/NotoSans-Bold.ttf
+            weight: 700
+          - asset: assets/fonts/NotoSans-BoldItalic.ttf
+            weight: 700
+            style: italic
+          - asset: assets/fonts/NotoSans-Italic.ttf
+            style: italic
+            weight: 400                      

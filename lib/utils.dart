@@ -119,17 +119,6 @@ class Utils {
   static const String home = "/Home";
   static const String root = "/";
 
-  static const String extra_dc_main = "/ex_dc_main";
-  static const String extra_dc_demo1 = "/ex_dc_demo1";
-  static const String extra_dc_demo2 = "/ex_dc_demo2";
-
-  static const String extra_btd_main = "/ex_btd_main";
-  static const String extra_gte_main = "/ex_gte_main";
-  static const String extra_fs_main = "/ex_fs_main";
-  static const String extra_fft_main = "/ex_fft_main";
-  static const String extra_rm_main = "/ex_rm_main";
-  static const String extra_ls_main = "/ex_ls_main";
-
   static const String rateApp = "/Rate the App";
   static const String slack_invite =
       "https://join.slack.com/t/flutter-worldwide/shared_invite/enQtNzMyMjM3Nzc2Njc0LTdmYWI5ZGU5YjgxNjliYzhjZTU0MWNkZTA5MjY4ZmJiMjg4ZGQ2ZDQwNDdiOTdiOWVkZDA2NjY5YjllMGQ1M2M";
@@ -758,4 +747,20 @@ class Utils {
   static const String expanded_img = "$imageDir/expanded_info.svg";
   static const String medium_img = "$imageDir/medium_icon.svg";
   static const String slack_img = "$imageDir/slack_icon.svg";
+
+
+  //extra routes
+  static const String extra_dc_main = "/ex_dc_main";
+  static const String extra_dc_demo1 = "/ex_dc_demo1";
+  static const String extra_dc_demo2 = "/ex_dc_demo2";
+
+  static const String extra_btd_main = "/ex_btd_main";
+  static const String extra_gte_main = "/ex_gte_main";
+  static const String extra_fs_main = "/ex_fs_main";
+  static const String extra_fft_main = "/ex_fft_main";
+  static const String extra_rm_main = "/ex_rm_main";
+  static const String extra_ls_main = "/ex_ls_main";
+  static const String extra_c19_main = "/ex_c19_main";
+  static const String extra_ads_main = "/ex_ads_main";
+  static const String extra_vs_main = "/ex_vs_main";
 }

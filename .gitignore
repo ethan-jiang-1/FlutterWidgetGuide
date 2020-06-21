@@ -118,6 +118,11 @@ app.*.symbols
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
 
-FlutterWidgetGuide.iml
 
 *.orig 
+ios/Flutter/flutter_export_environment.sh
+
+
+FlutterWidgetGuide.iml
+flutter_widget_guide.iml
+flutter_widget_guide_andorid.iml

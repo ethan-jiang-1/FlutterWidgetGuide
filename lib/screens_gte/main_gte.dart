@@ -213,7 +213,7 @@ class MainText extends StatelessWidget {
           'Discover the awe-inspiring\nPyramids of Fize and ancient Egypt\'s',
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontSize: MediaQuery.of(context).size.shortestSide > 400 ? 40 : 32,
+            fontSize: MediaQuery.of(context).size.shortestSide > 400 ? 32 : 28,
           ),
         ),
         SizedBox(height: 32),
@@ -268,14 +268,14 @@ class Page1 extends StatelessWidget {
                 Expanded(
                   child: Text(
                     'The ancient Egyptian civilization, famous for its pyramids, pharaohs, mummies, and tombs, flourished for thousands for thousands of yers. But what was its lasting impact?',
-                    style: TextStyle(color: Colors.black, fontSize: 16),
+                    style: TextStyle(color: Colors.black, fontSize: 18),
                   ),
                 ),
                 SizedBox(width: 64),
                 Expanded(
                   child: Text(
                     'Watch the video below to learn how ancient Egypt contributed to modern-day society with its many cultural developments, particularly in language & mathematics',
-                    style: TextStyle(color: Colors.black, fontSize: 16),
+                    style: TextStyle(color: Colors.black, fontSize: 18),
                   ),
                 )
               ],
@@ -283,12 +283,12 @@ class Page1 extends StatelessWidget {
           else ...[
             Text(
               'The ancient Egyptian civilization, famous for its pyramids, pharaohs, mummies, and tombs, flourished for thousands for thousands of yers. But what was its lasting impact?',
-              style: TextStyle(color: Colors.black, fontSize: 16),
+              style: TextStyle(color: Colors.black, fontSize: 18),
             ),
             SizedBox(height: 16),
             Text(
               'Watch the video below to learn how ancient Egypt contributed to modern-day society with its many cultural developments, particularly in language & mathematics',
-              style: TextStyle(color: Colors.black, fontSize: 16),
+              style: TextStyle(color: Colors.black, fontSize: 18),
             )
           ],
           SizedBox(height: height * 0.1),
@@ -435,7 +435,7 @@ class _Page3State extends State<Page3> with SingleTickerProviderStateMixin {
       text: TextSpan(
         style: TextStyle(
           color: Colors.white,
-          fontSize: 40,
+          fontSize: 28,
           fontFamily: 'IbarraRealNova',
         ),
         children: [
@@ -509,7 +509,7 @@ class _Page3State extends State<Page3> with SingleTickerProviderStateMixin {
             'His original name was\nNot Tutankhamun',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 38,
+              fontSize: 28,
             ),
           ),
           SizedBox(height: 32),

@@ -21,6 +21,7 @@ class HomePage extends StatefulWidget {
 
 /// WidgetsBindingObserver helps to keep track of the app lifecycle state
 class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
+  ScrollController _scrollController = ScrollController();
   BuildContext _buildContext;
   var versionNumber;
   bool isFabVisible = true;
@@ -127,7 +128,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
             content: SafeArea(
               child: Scrollbar(
                 isAlwaysShown: true,
+                controller: _scrollController,
                 child: SingleChildScrollView(
+                      controller: _scrollController,
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.center,

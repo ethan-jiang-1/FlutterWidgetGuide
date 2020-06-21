@@ -101,7 +101,6 @@ flutter:
       - assets/images/tomato.jpg
       - assets/images/watermelon.jpg
       - assets/images/orange_bell_pepper.jpg
-      - images/
       - assets/img/
       - assets/icons/
       - assets/images/
@@ -115,30 +114,30 @@ flutter:
           - asset: assets/fonts/CrimsonText-Regular.ttf
       - family: SF Pro Display
         fonts:
-        - asset: fonts/SF-Pro-Display-Ultralight.otf
+        - asset: assets/fonts/SF-Pro-Display-Ultralight.otf
           weight: 100
-        - asset: fonts/SF-Pro-Display-Thin.otf
+        - asset: assets/fonts/SF-Pro-Display-Thin.otf
           weight: 200
-        - asset: fonts/SF-Pro-Display-Light.otf
+        - asset: assets/fonts/SF-Pro-Display-Light.otf
           weight: 300
-        - asset: fonts/SF-Pro-Display-Regular.otf
+        - asset: assets/fonts/SF-Pro-Display-Regular.otf
           weight: 400
-        - asset: fonts/SF-Pro-Display-Medium.otf
+        - asset: assets/fonts/SF-Pro-Display-Medium.otf
           weight: 500
-        - asset: fonts/SF-Pro-Display-Semibold.otf
+        - asset: assets/fonts/SF-Pro-Display-Semibold.otf
           weight: 600
-        - asset: fonts/SF-Pro-Display-Bold.otf
+        - asset: assets/fonts/SF-Pro-Display-Bold.otf
           weight: 700
-        - asset: fonts/SF-Pro-Display-Heavy.otf
+        - asset: assets/fonts/SF-Pro-Display-Heavy.otf
           weight: 800
-        - asset: fonts/SF-Pro-Display-Black.otf
+        - asset: assets/fonts/SF-Pro-Display-Black.otf
           weight: 900
       - family: IbarraRealNova
         fonts:
-          - asset: fonts/Ibarra_Real_Nova/IbarraRealNova-Regular.ttf
+          - asset: assets/fonts/Ibarra_Real_Nova/IbarraRealNova-Regular.ttf
       - family: Deligne
         fonts:
-          - asset: fonts/OPTIDeligne-Normal.otf
+          - asset: assets/fonts/OPTIDeligne-Normal.otf
       - family: RobotoMedium
         fonts:
           - asset: assets/fonts/Roboto-Medium.ttf

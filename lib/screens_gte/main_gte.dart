@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
             height: screenHeight,
             child: RepaintBoundary(
               child: Image.asset(
-                'images/sky.png',
+                'assets/images/sky.png',
                 fit: BoxFit.cover,
               ),
             ),
@@ -85,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
             height: screenHeight * 0.4,
             child: RepaintBoundary(
               child: Image.asset(
-                'images/pyramid.png',
+                'assets/images/pyramid.png',
                 fit: BoxFit.cover,
                 alignment: Alignment(0, -0.2),
               ),
@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
             height: screenHeight / 3,
             child: RepaintBoundary(
               child: Image.asset(
-                'images/sand.png',
+                'assets/images/sand.png',
                 fit: BoxFit.fill,
               ),
             ),
@@ -349,7 +349,7 @@ class Page2 extends StatelessWidget {
                 alignment: Alignment.center,
                 children: <Widget>[
                   Image.asset(
-                    'images/camel.png',
+                    'assets/images/camel.png',
                     fit: BoxFit.fitWidth,
                   ),
                   Icon(
@@ -489,7 +489,7 @@ class _Page3State extends State<Page3> with SingleTickerProviderStateMixin {
                 );
               },
             ),
-            Image.asset('images/pharaon.png'),
+            Image.asset('assets/images/pharaon.png'),
           ],
         ),
       ),

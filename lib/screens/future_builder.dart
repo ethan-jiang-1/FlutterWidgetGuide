@@ -88,6 +88,7 @@ class _FutureBuilderWidgetState extends State<FutureBuilderWidget> {
                   textAlign: TextAlign.center,
                 );
             }
+            return Text("");
           },
         ),
       ),

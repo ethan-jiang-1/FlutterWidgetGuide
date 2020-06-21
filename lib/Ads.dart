@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class Ads {
   static bool isShown = false;
-  static bool _isGoingToBeShown = false;
+  //static bool _isGoingToBeShown = false;
   //static BannerAd _bannerAd;
   static ValueNotifier<bool> isAdShown = ValueNotifier<bool>(false);
 

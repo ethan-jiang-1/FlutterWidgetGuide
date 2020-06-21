@@ -22,7 +22,7 @@ class HomePage extends StatefulWidget {
 /// WidgetsBindingObserver helps to keep track of the app lifecycle state
 class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   ScrollController _scrollController = ScrollController();
-  BuildContext _buildContext;
+  //BuildContext _buildContext;
   var versionNumber;
   bool isFabVisible = true;
   bool hasJoinedSlack = false;
@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    _buildContext = context;
+    //_buildContext = context;
     return homePageScaffold(context);
   }
 
@@ -292,7 +292,6 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   setupRemoteConfig() async {
     //final RemoteConfig remoteConfig = await RemoteConfig.instance;
     // Enable developer mode to relax fetch throttling
-    // TODO: remove in prod / Enable in debug mode for faster testing
     //remoteConfig.setConfigSettings(RemoteConfigSettings(debugMode: true));
     /// if network is weak and fetching fails, set default value
     /*

@@ -20,15 +20,18 @@ import 'package:flutter_widget_guide/screens_vs/screens/home.dart';
   );
 } */
 
-Widget MyVsApp() {
-  return  ScopedModel<AppState>(
-      model: AppState(),
-      child: ScopedModel<Preferences>(
-        model: Preferences()..load(),
-        child: CupertinoApp(
-          debugShowCheckedModeBanner: false,
-          home: HomeScreen(),
+class MyVsApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return  ScopedModel<AppState>(
+        model: AppState(),
+        child: ScopedModel<Preferences>(
+          model: Preferences()..load(),
+          child: CupertinoApp(
+            debugShowCheckedModeBanner: false,
+            home: HomeScreen(),
+          ),
         ),
-      ),
-    );
+      );
+  }
 }

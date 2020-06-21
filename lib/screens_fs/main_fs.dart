@@ -4,11 +4,14 @@ import 'package:flutter/material.dart';
 //  runApp(MyFsApp());
 //}
 
-Widget MyFsApp() {
-  return MaterialApp(
-    theme: ThemeData(primarySwatch: Colors.blue, brightness: Brightness.dark),
-    home: FlightsStepper(),
-  );
+class MyFsApp extends StatelessWidget {
+  @override 
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.blue, brightness: Brightness.dark),
+      home: FlightsStepper(),
+    );
+  }
 }
 
 class FlightsStepper extends StatefulWidget {

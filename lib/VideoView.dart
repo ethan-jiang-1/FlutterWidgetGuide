@@ -37,8 +37,6 @@ class _VideoViewState extends State<VideoView> {
           loop: false,
           enableCaption: false),
     );
-    //TODO: Add real ad unit id
-    //Ads.showBannerAd(BannerAd.testAdUnitId);
     _lockInPortrait();
     super.initState();
   }

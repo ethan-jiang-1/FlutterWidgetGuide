@@ -40,12 +40,12 @@ ThemeData _buildLightTheme() {
     brightness: Brightness.light,
     backgroundColor: Colors.black87,
     primaryTextTheme: TextTheme(
-      body1: TextStyle(color: Colors.white),
+      /*body1*/ bodyText2: TextStyle(color: Colors.white),
     ),
 
     ///For slider label
     accentTextTheme: TextTheme(
-      body2: TextStyle(color: Colors.white, backgroundColor: Colors.lightBlue),
+      /*body2*/ bodyText1: TextStyle(color: Colors.white, backgroundColor: Colors.lightBlue),
     ),
   );
   return base.copyWith(
@@ -58,10 +58,10 @@ ThemeData _buildLightTheme() {
 ThemeData _buildDarkTheme() {
   const Color primaryColor = Colors.black;
   const Color secondaryColor = Colors.black87;
-  final ColorScheme colorScheme = const ColorScheme.dark().copyWith(
-    primary: primaryColor,
-    secondary: secondaryColor,
-  );
+  //final ColorScheme colorScheme = const ColorScheme.dark().copyWith(
+  //  primary: primaryColor,
+  // secondary: secondaryColor,
+  //);
   final ThemeData base = ThemeData(
     accentColorBrightness: Brightness.dark,
     primaryColor: primaryColor,
@@ -80,12 +80,12 @@ ThemeData _buildDarkTheme() {
     brightness: Brightness.dark,
     backgroundColor: Colors.white,
     primaryTextTheme: TextTheme(
-      body1: TextStyle(color: Colors.white),
+      /*body1*/bodyText2: TextStyle(color: Colors.white),
     ),
 
     ///For slider label
     accentTextTheme: TextTheme(
-      body2: TextStyle(color: Colors.white, backgroundColor: Colors.lightBlue),
+      /*body2*/bodyText1: TextStyle(color: Colors.white, backgroundColor: Colors.lightBlue),
     ),
 
     cupertinoOverrideTheme: CupertinoThemeData(

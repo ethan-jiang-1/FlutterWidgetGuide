@@ -6,7 +6,9 @@ import 'package:flutter_widget_guide/screens_rm/radial_menu_item.dart';
 //  runApp(MyApp());
 //}
 
-Widget MyRmApp() {
+class MyRmApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
     return MaterialApp(
       home: new Scaffold(
         body: new Center(
@@ -43,4 +45,5 @@ Widget MyRmApp() {
         ),
       ),
     );
+  }
 }

@@ -91,7 +91,7 @@ class CustomGuitarDrawerState extends State<CustomGuitarDrawer>
                   width: MediaQuery.of(context).size.width,
                   child: Text(
                     'Hello Flutter Europe',
-                    style: Theme.of(context).primaryTextTheme.title,
+                    //style: Theme.of(context).primaryTextTheme.title,
                     textAlign: TextAlign.center,
                   ),
                 ),
